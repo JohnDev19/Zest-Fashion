@@ -1,4 +1,4 @@
-# 🌟 ZEST - Contemporary Fashion Platform
+# 🌟 ZEST - Fashion Platform
 
 ## 🚀 Project Overview
 
