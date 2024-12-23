@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+╔═══════════════════════════════════════════════════════════════╗
+║                           ZEST FASHION PLATFORM                       
+╠═══════════════════════════════════════════════════════════════╣
+
+╔═══════════════════════════════════════════════════════════════╗
+║ PROJECT DETAILS                                                     
+╠═══════════════════════════════════════════════════════════════╣
+║ Name:            ZEST - Fashion E-commerce Platform      
+║ Version:         1.0.0                                                
+║ Description:     Modern, responsive fashion platform with advanced UI/UX  
+╚═══════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║ DEVELOPER INFORMATION                                                 
+╠═══════════════════════════════════════════════════════════════╣
+║ Developer:       JohnDev19                                            
+║ GitHub:          @JohnDev19                                           
+╚═══════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║ PROJECT METADATA                                                    
+╠═══════════════════════════════════════════════════════════════╣
+║ Last Update:     2024-12-23
+║ Licence:         MIT License                                        
+╚═══════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║ TECHNOLOGIES & FRAMEWORKS                                             
+╠═══════════════════════════════════════════════════════════════╣
+║ Frontend:        HTML5, CSS3, Vanilla JavaScript                      
+║ Design System:   Custom Design, Responsive Mobile-First Approach      
+║ Libraries:       AOS (Animate on Scroll), Bootstrap Icons             
+║ Performance:     Optimized Rendering, Lazy Loading                    
+╚═══════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║ TABLE OF ELEMENTS                                                     
+╠═══════════════════════════════════════════════════════════════╣
+║ 1. Header                                                             
+║ 2. Hero Section                                                       
+║ 3. Men's Collection                                                   
+║ 4. Women's Collection                                                 
+║ 5. About Section                                                      
+║ 6. Featured Products                                                  
+║ 7. New Arrivals                                                       
+║ 8. Hot Deals                                                          
+║ 9. Product Categories                                                 
+║ 10. Subscribe Section                                                 
+║ 11. Footer                                                            
+║ 12. Mobile Navigation                                                 
+╚═══════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║ ACCESSIBILITY & PERFORMANCE NOTES                                     
+╠═══════════════════════════════════════════════════════════════╣
+║ - Semantic HTML5 Structure                                          
+║ - WCAG 2.1 Compliance Considerations                                  
+║ - Responsive Design (Mobile, Tablet, Desktop)                         
+║ - Optimized Asset Loading                                             
+╚═══════════════════════════════════════════════════════════════╝
+-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>ZEST - Fashion Platform</title>
+    <meta name="title" content="ZEST - Fashion Platform">
+    <meta name="description" content="Discover sophisticated, versatile clothing that combines modern design with timeless elegance. Shop the latest fashion trends for men and women.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zestfashion.com/">
+    <meta property="og:title" content="ZEST - Fashion Platform">
+    <meta property="og:description" content="Discover sophisticated, versatile clothing that combines modern design with timeless elegance. Shop the latest fashion trends for men and women.">
+    <meta property="og:image" content="poster1.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.zestfashion.com/">
+    <meta property="twitter:title" content="ZEST - Fashion Platform">
+    <meta property="twitter:description" content="Discover sophisticated, versatile clothing that combines modern design with timeless elegance. Shop the latest fashion trends for men and women.">
+    <meta property="twitter:image" content="poster1.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/z-logo.png">
+    <link rel="apple-touch-icon" href="images/z-logo.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.zestfashion.com/">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    
+    <!-- Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- SEO and Accessibility -->
+    <meta name="keywords" content="fashion, clothing, men's wear, women's wear, style, trendy clothes">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="JohnDev19">
+    
+    <!-- Performance Optimization -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    
+    <!-- Web App Capabilities -->
+    <meta name="application-name" content="ZEST Fashion">
+    <meta name="theme-color" content="#2076c9">
+</head>
+<body>
+<header id="header">
+    <nav class="container">
+        <a href="#" class="logo">
+            <img src="images/z-logo.png" alt="ZEST Logo" style="height: 40px; width: auto;">
+        </a>
+        <div class="search-wrapper">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search ZEST...">
+                <button class="search-button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-logo">
+            <img src="images/z-logo.png" alt="ZEST Logo">
+            <span>ZEST</span>
+        </div>
+        <div class="sidebar-close">
+            <i class="bi bi-x-lg"></i>
+        </div>
+    </div>
+
+    <nav class="sidebar-nav">
+        <div class="sidebar-nav-item">
+            <a href="#home">Home</a>
+        </div>
+
+        <div class="sidebar-nav-item">
+            <a href="#" class="dropdown-trigger">
+                Men's
+                <i class="bi bi-plus toggle-dropdown"></i>
+            </a>
+            <div class="sidebar-dropdown">
+                <a href="#">T-Shirts</a>
+                <a href="#">Shirts</a>
+                <a href="#">Jeans</a>
+                <a href="#">Jackets</a>
+                <a href="#">Suits</a>
+                <a href="#">Accessories</a>
+            </div>
+        </div>
+
+        <div class="sidebar-nav-item">
+            <a href="#" class="dropdown-trigger">
+                Women's
+                <i class="bi bi-plus toggle-dropdown"></i>
+            </a>
+            <div class="sidebar-dropdown">
+                <a href="#">Dresses</a>
+                <a href="#">Blouses</a>
+                <a href="#">Skirts</a>
+                <a href="#">Pants</a>
+                <a href="#">Jackets</a>
+                <a href="#">Accessories</a>
+            </div>
+        </div>
+
+        <div class="sidebar-nav-item">
+            <a href="#" class="dropdown-trigger">
+                Perfume
+                <i class="bi bi-plus toggle-dropdown"></i>
+            </a>
+            <div class="sidebar-dropdown">
+                <a href="#">Men's Fragrances</a>
+                <a href="#">Women's Fragrances</a>
+                <a href="#">Unisex Perfumes</a>
+                <a href="#">Luxury Scents</a>
+                <a href="#">Gift Sets</a>
+            </div>
+        </div>
+
+        <div class="sidebar-nav-item">
+            <a href="#" class="dropdown-trigger">
+                Hot Offers
+                <i class="bi bi-plus toggle-dropdown"></i>
+            </a>
+            <div class="sidebar-dropdown">
+                <a href="#">Seasonal Sale</a>
+                <a href="#">Clearance</a>
+                <a href="#">Flash Deals</a>
+                <a href="#">Student Discounts</a>
+                <a href="#">Bundle Offers</a>
+            </div>
+        </div>
+
+        <div class="sidebar-nav-item">
+            <a href="#about">About Us</a>
+        </div>
+
+        <div class="sidebar-nav-item">
+            <a href="#featured">Featured</a>
+        </div>
+    </nav>
+
+    <div class="sidebar-social-icons">
+        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-pinterest"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+    </div>
+
+    <div class="sidebar-footer">
+        <p>&copy; 2024 ZEST. All Rights Reserved.</p>
+    </div>
+</div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text" data-aos="fade-up">
+                      <div class="hero-decoration-star hero-decoration-star-text-bottom-right">✦</div>
+                      <div class="hero-decoration-star hero-decoration-star-text-top-left">✦</div>
+                        <h1>Elevate Your <span class="gradient-text-soft">Style</span> with ZEST</h1>
+                        <p>Discover sophisticated, versatile clothing that combines modern design with timeless elegance.</p>
+                        <div class="cta-buttons">
+                        <a href="#featured" class="cta-button">Explore</a>
+                        <a href="#about" class="cta-button2">About</a>
+                        </div>
+                    </div>
+                    <div class="hero-image" data-aos="fade-up">
+                      <div class="hero-decoration-star hero-decoration-star-image-top-left">✦</div>
+                     <div class="hero-image-badge">
+                    <div class="hero-image-badge-content">
+            New Collection 
+            <i class="hero-image-badge-icon bi bi-stars"></i>
+        </div>
+    </div>
+    <img src="images/hero-img.jpg" alt="ZEST Fashion">
+    </div>
+   </div>
+   <div class="hero-count" data-aos="fade-right">
+    <div class="hero-count-item">
+        <span class="count" data-target="180000">0</span> 
+        <div class="count-label">Happy Users</div>
+    </div>
+    <div class="hero-count-item">
+        <span class="count" data-target="90000">0</span> 
+        <div class="count-label">Reviews</div>
+    </div>
+</div>
+ </div>
+</section>
+
+
+<section id="product-mens" class="product-mens">
+    <div class="container" data-aos="fade-down">
+        <h2>Men's <span class="gradient-text-soft">Collection</span></h2>
+        <div class="product-showcase">
+            <div class="showcase-wrapper has-scrollbar">
+                <div class="showcase-container">
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/mens1.webp" alt="Fashionable Short Sleeve T-Shirt" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Fashionable Short Sleeve T-Shirt</a>
+                            <a href="#" class="showcase-category">Fashion Wear</a>
+
+                            <div class="price-box">
+                                <p class="price">₱1,299</p>
+                                <del>₱1,799</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/mens2.webp" alt="Trendy Shoes" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Trendy Shoes</a>
+                            <a href="#" class="showcase-category">Foot Wear</a>
+
+                            <div class="price-box">
+                                <p class="price">₱2,499</p>
+                                <del>₱3,299</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/mens3.webp" alt="Baggy Jeans" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Baggy Jeans</a>
+                            <a href="#" class="showcase-category">Baggy</a>
+
+                            <div class="price-box">
+                                <p class="price">₱3,299</p>
+                                <del>₱4,499</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/mens4.webp" alt="Block Zip-up Jacket" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Block Zip-up Jacket</a>
+                            <a href="#" class="showcase-category">Outerwear</a>
+
+                            <div class="price-box">
+                                <p class="price">₱4,799</p>
+                                <del>₱5,999</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-container">
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/mens5.webp" alt="Jeans Belt" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Jeans Belt</a>
+                            <a href="#" class="showcase-category">Accessories</a>
+
+                            <div class="price-box">
+                                <p class="price">₱2,799</p>
+                                <del>₱3,599</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/mens6.webp" alt="Casual Short Sleves" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Casual Short Sleves</a>
+                            <a href="#" class="showcase-category">Casual</a>
+
+                            <div class="price-box">
+                                <p class="price">₱3,199</p>
+                                <del>₱4,299</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/mens7.webp" alt="Lightweight Sun Hat" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Lightweight Sun Hat</a>
+                            <a href="#" class="showcase-category">Accessories</a>
+
+                            <div class="price-box">
+                                <p class="price">₱1,999</p>
+                                <del>₱2,699</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/mens8.webp" alt="Leather Casual Watch" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Leather Casual Watch</a>
+                            <a href="#" class="showcase-category">Outerwear</a>
+
+                            <div class="price-box">
+                                <p class="price">₱5,499</p>
+                                <del>₱6,799</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="container" data-aos="fade-down">
+        <h2>Women's <span class="gradient-text-soft">Collection</span></h2>
+        <div class="product-showcase">
+            <div class="showcase-wrapper has-scrollbar">
+                <div class="showcase-container">
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/womens1.webp" alt="Two-piece Long Sleeve" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Two-piece Long Sleeve</a>
+                            <a href="#" class="showcase-category">Loungewear</a>
+
+                            <div class="price-box">
+                                <p class="price">₱1,299</p>
+                                <del>₱1,799</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/womens2.webp" alt="Knit Beanie Hat" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Knit Beanie Hat</a>
+                            <a href="#" class="showcase-category">Accessories</a>
+
+                            <div class="price-box">
+                                <p class="price">₱2,499</p>
+                                <del>₱3,299</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/womens3.webp" alt="Short Sleeve" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Short Sleeve</a>
+                            <a href="#" class="showcase-category">Loungewear</a>
+
+                            <div class="price-box">
+                                <p class="price">₱3,299</p>
+                                <del>₱4,499</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/womens4.webp" alt="Shot-bow Glasses" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Shot-bow Glasses</a>
+                            <a href="#" class="showcase-category">Outerwear</a>
+
+                            <div class="price-box">
+                                <p class="price">₱136</p>
+                                <del>₱666</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-container">
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/womens5.webp" alt="Luxury Vintage Watch" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Luxury Vintage Watch</a>
+                            <a href="#" class="showcase-category">Accessories</a>
+
+                            <div class="price-box">
+                                <p class="price">₱2,799</p>
+                                <del>₱3,599</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/womens6.webp" alt="High-heeled Sandals" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">High-heeled Sandals</a>
+                            <a href="#" class="showcase-category">Footwear</a>
+
+                            <div class="price-box">
+                                <p class="price">₱3,199</p>
+                                <del>₱4,299</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/womens7.webp" alt="Chic Baguette Shoulder Bag" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Baguette Shoulder Bag</a>
+                            <a href="#" class="showcase-category">Accessories</a>
+
+                            <div class="price-box">
+                                <p class="price">₱1,999</p>
+                                <del>₱2,699</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <a href="#" class="showcase-img-box">
+                            <img src="images/womens8.webp" alt="Knitted Long-sleeve Sweater" class="showcase-img">
+                        </a>
+
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-title">Long-sleeve Sweater</a>
+                            <a href="#" class="showcase-category">Loungewear</a>
+
+                            <div class="price-box">
+                                <p class="price">₱5,499</p>
+                                <del>₱6,799</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="about" class="about">
+          <div class="about-element-container" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/element-sunglass.png" alt="Element Design" class="about-element-image">
+        </div>
+            <div class="container">
+                <h2 data-aos="fade-up">About <span class="gradient-text-soft">ZEST</span></h2>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-up">
+                        <p>ZEST is a contemporary fashion platform delivering sophisticated, versatile clothing that combines modern design with timeless elegance. We cater to individuals who appreciate quality and personal expression through their style.</p><br>
+                        <p>Our commitment to quality fabrics, expert craftsmanship, and innovative designs ensures that each piece in our collection is not just a garment, but a statement of refined taste and individuality.</p><br>
+                        <p>ZEST is a contemporary fashion platform delivering sophisticated, versatile clothing that combines modern design with timeless elegance. We cater to individuals who appreciate quality and personal expression through their style.</p>
+                      </div>
+                      <div class="about-image" data-aos="fade-up">
+                        <div class="about-star-decoration">✦</div>
+                        <img src="images/about-img.jpg" alt="ZEST Fashion Design">
+                        </div>
+                </div>
+                <div class="features">
+                    <div class="feature" data-aos="fade-up">
+                        <i class="bi bi-palette"></i>
+                        <h3>Personalized Styling</h3>
+                        <p>Get expert advice tailored to your unique style.</p>
+                    </div>
+                    <div class="feature" data-aos="fade-up" data-aos-delay="100">
+                        <i class="bi bi-rulers"></i>
+                        <h3>Perfect Fit</h3>
+                        <p>Our comprehensive size guide ensures the perfect fit every time.</p>
+                    </div>
+                    <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                        <i class="bi bi-award"></i>
+                        <h3>Quality Assurance</h3>
+                        <p>Premium fabrics and expert craftsmanship in every piece.</p>
+                    </div>
+                 <div class="feature" data-aos="fade-up" data-aos-delay="300">
+                      <i class="bi bi-truck"></i>
+                     <h3>Fast Shipping</h3>
+                   <p>Quick and reliable delivery to your doorstep.</p>
+              </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="featured" class="product-section">
+    <div class="container">
+        <h2 data-aos="fade-up">Featured <span class="gradient-text-soft">Products</span></h2>
+        <div class="product-grid">
+            <div class="product-item" data-aos="fade-up">
+                <span class="product-badge featured">Featured</span>
+                <div class="product-wishlist">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <img src="images/feature1.jpg" alt="Varsity Jacket">
+                <div class="product-item-content">
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <span class="review-count">(42)</span>
+                    </div>
+                    <h3>Varsity Jacket</h3>
+                    <div class="product-price">
+                        <span class="price">₱4,999</span>
+                        <span class="original-price">₱6,999</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <a href="#" class="add-to-cart">
+                        <i class="bi bi-cart-plus"></i> Add to Cart
+                    </a>
+                    <a href="#" class="quick-view">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                <span class="product-badge new">New</span>
+                <div class="product-wishlist">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <img src="images/feature2.jpg" alt="Statement Handbags">
+                <div class="product-item-content">
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <span class="review-count">(28)</span>
+                    </div>
+                    <h3>Statement Handbags</h3>
+                    <div class="product-price">
+                        <span class="price">₱2,999</span>
+                        <span class="original-price">₱3,999</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <a href="#" class="add-to-cart">
+                        <i class="bi bi-cart-plus"></i> Add to Cart
+                    </a>
+                    <a href="#" class="quick-view">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-item" data-aos="fade-up" data-aos-delay="200">
+                <span class="product-badge sale">Sale</span>
+                <div class="product-wishlist">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <img src="images/feature3.jpg" alt="Classic Trousers">
+                <div class="product-item-content">
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <span class="review-count">(35)</span>
+                    </div>
+                    <h3>Classic Trousers</h3>
+                    <div class="product-price">
+                        <span class="price">₱3,499</span>
+                        <span class="original-price">₱4,999</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <a href="#" class="add-to-cart">
+                        <i class="bi bi-cart-plus"></i> Add to Cart
+                    </a>
+                    <a href="#" class="quick-view">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-item" data-aos="fade-up" data-aos-delay="300">
+                <span class="product-badge trending">Trending</span>
+                <div class="product-wishlist">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <img src="images/feature4.jpg" alt="Skinny Jeans">
+                <div class="product-item-content">
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <span class="review-count">(50)</span>
+                    </div>
+                    <h3>Skinny Jeans</h3>
+                    <div class="product-price">
+                        <span class="price">₱5,999</span>
+                        <span class="original-price">₱7,999</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <a href="#" class="add-to-cart">
+                        <i class="bi bi-cart-plus"></i> Add to Cart
+                    </a>
+                    <a href="#" class="quick-view">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="new-arrivals" class="product-section">
+    <div class="container">
+        <h2 data-aos="fade-up">New <span class="gradient-text-soft">Arrivals</span></h2>
+        <div class="product-grid">
+            <div class="product-item" data-aos="fade-up">
+                <span class="product-badge new">New</span>
+                <div class="product-wishlist">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <img src="images/new1.jpeg" alt="Baggy Denim Jeans">
+                <div class="product-item-content">
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <span class="review-count">(15)</span>
+                    </div>
+                    <h3>Baggy Denim Jeans</h3>
+                    <div class="product-price">
+                        <span class="price">₱3,999</span>
+                        <span class="original-price">₱4,999</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <a href="#" class="add-to-cart">
+                        <i class="bi bi-cart-plus"></i> Add to Cart
+                    </a>
+                    <a href="#" class="quick-view">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                <span class="product-badge new">New</span>
+                <div class="product-wishlist">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <img src="images/new2.jpeg" alt="Sneakers">
+                <div class="product-item-content">
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <span class="review-count">(22)</span>
+                    </div>
+                    <h3>Trendy Sneakers</h3>
+                    <div class="product-price">
+                        <span class="price">₱5,499</span>
+                        <span class="original-price">₱6,499</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <a href="#" class="add-to-cart">
+                        <i class="bi bi-cart-plus"></i> Add to Cart
+                    </a>
+                    <a href="#" class="quick-view">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-item" data-aos="fade-up" data-aos-delay="200">
+                <span class="product-badge new">New</span>
+                <div class="product-wishlist">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <img src="images/new3.jpeg" alt="Denim Jacket">
+                <div class="product-item-content">
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <span class="review-count">(30)</span>
+                    </div>
+                    <h3>Denim Jacket</h3>
+                    <div class="product-price">
+                        <span class="price">₱4,299</span>
+                        <span class="original-price">₱5,299</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <a href="#" class="add-to-cart">
+                        <i class="bi bi-cart-plus"></i> Add to Cart
+                    </a>
+                    <a href="#" class="quick-view">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-item" data-aos="fade-up" data-aos-delay="300">
+                <span class="product-badge new">New</span>
+                <div class="product-wishlist">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <img src="images/new4.jpg" alt="Statement Necklace">
+                <div class="product-item-content">
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <span class="review-count">(10)</span>
+                    </div>
+                    <h3>Statement Necklace</h3>
+                    <div class="product-price">
+                        <span class="price">₱1,999</span>
+                        <span class="original-price">₱2,499</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <a href="#" class="add-to-cart">
+                        <i class="bi bi-cart-plus"></i> Add to Cart
+                    </a>
+                    <a href="#" class="quick-view">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="explore-section">
+    <div class="explore-cta-wrapper">
+        <a href="#home" class="zest-explore-cta">
+            <span class="cta-text">Explore More</span>
+            <span class="cta-icon">
+                <i class="bi bi-chevron-right"></i>
+            </span>
+        </a>
+    </div>
+</div>
+    </div>
+</section>
+<!-- 
+<section id="trending" class="product-section">
+    <div class="container">
+        <h2 data-aos="fade-up">Trending <span class="gradient-text-soft">Now</span></h2>
+        <div class="product-grid">
+            <div class="product-item" data-aos="fade-up">
+                <span class="product-badge trending">Trending</span>
+                <div class="product-wishlist">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <img src="images/trend1.jpeg" alt="Maxi Skirt">
+                <div class="product-item-content">
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <span class="review-count">(20)</span>
+                    </div>
+                    <h3>Floral Maxi Skirt</h3>
+                    <div class="product-price">
+                        <span class="price">₱3,299</span>
+                        <span class="original-price">₱4,299</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <a href="#" class="add-to-cart">
+                        <i class="bi bi-cart-plus"></i> Add to Cart
+                    </a>
+                    <a href="#" class="quick-view">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                <span class="product-badge trending">Trending</span>
+                <div class="product-wishlist">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <img src="images/trend2.jpeg" alt="Sunglasses">
+                <div class="product-item-content">
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <span class="review-count">(15)</span>
+                    </div>
+                    <h3>Designer Sunglasses</h3>
+                    <div class="product-price">
+                        <span class="price">₱6,499</span>
+                        <span class="original-price">₱7,499</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                        <a href="#" class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </a>
+                        <a href="#" class="quick-view">
+                            <i class="bi bi-eye"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="200">
+                    <span class="product-badge trending">Trending</span>
+                    <div class="product-wishlist">
+                        <i class="bi bi-heart"></i>
+                    </div>
+                    <img src="images/trend3.jpeg" alt="Watch">
+                    <div class="product-item-content">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <span class="review-count">(35)</span>
+                        </div>
+                        <h3>Watch</h3>
+                        <div class="product-price">
+                            <span class="price">₱7,999</span>
+                            <span class="original-price">₱9,499</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="#" class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </a>
+                        <a href="#" class="quick-view">
+                            <i class="bi bi-eye"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="300">
+                    <span class="product-badge trending">Trending</span>
+                    <div class="product-wishlist">
+                        <i class="bi bi-heart"></i>
+                    </div>
+                    <img src="images/trend4.jpg" alt="Tote Bag">
+                    <div class="product-item-content">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <span class="review-count">(25)</span>
+                        </div>
+                        <h3>Canvas Tote Bag</h3>
+                        <div class="product-price">
+                            <span class="price">₱2,499</span>
+                            <span class="original-price">₱3,299</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="#" class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </a>
+                        <a href="#" class="quick-view">
+                            <i class="bi bi-eye"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+<section id="deals" class="product-section deals-section">
+  <!--
+  <div class="deals-element-container" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/element-bag.png" alt="Element Bag" class="deals-element-image">
+    </div> -->
+    <div class="container">
+        <h2 data-aos="fade-up">Hot <span class="gradient-text-soft">Deals</span></h2>
+        <div class="deals-grid">
+            <div class="deal-item" data-aos="fade-up">
+                <div class="deal-badge">
+                    <span class="badge-text">Up to 50% Off</span>
+                    <span class="badge-icon">
+                        <i class="bi bi-fire"></i>
+                    </span>
+                </div>
+                <div class="deal-content">
+                    <div class="deal-image">
+                        <img src="images/deal1.jpg" alt="Summer Collection">
+                        <div class="deal-overlay">
+                            <div class="deal-tag">Limited Time Offer</div>
+                        </div>
+                    </div>
+                    <div class="deal-details">
+                        <div class="deal-category">Summer Fashion</div>
+                        <h3>Summer Collection Blowout</h3>
+                        <p>Refresh your wardrobe with our latest summer styles and save big!</p>
+                        
+                        <div class="deal-stats">
+                            <div class="deal-stat">
+                                <i class="bi bi-tag"></i>
+                                <span>Discount: 50%</span>
+                            </div>
+                            <div class="deal-stat">
+                                <i class="bi bi-box-seam"></i>
+                                <span>Limited Stock</span>
+                            </div>
+                        </div>
+
+                        <div class="deal-countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="days">00</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="hours">00</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="minutes">00</span>
+                                <span class="countdown-label">Minutes</span>
+                            </div>
+                        </div>
+
+                        <div class="deal-price">
+                            <span class="original-price">₱6,999</span>
+                            <span class="discounted-price">₱3,499</span>
+                        </div>
+
+                        <div class="deal-actions">
+                            <a href="#" class="cta-button deal-button">Shop Now</a>
+                            <a href="#" class="quick-view-deal">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deal-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="deal-badge">
+                    <span class="badge-text">Accessories Sale</span>
+                    <span class="badge-icon">
+                        <i class="bi bi-stars"></i>
+                    </span>
+                </div>
+                <div class="deal-content">
+                    <div class="deal-image">
+                        <img src="images/deal2.jpg" alt="Accessories Sale">
+                        <div class="deal-overlay">
+                            <div class="deal-tag">Exclusive Offer</div>
+                        </div>
+                    </div>
+                    <div class="deal-details">
+                        <div class="deal-category">Luxury Accessories</div>
+                        <h3>Premium Accessories Extravaganza</h3>
+                        <p>Elevate your style with our premium accessories at unbeatable prices.</p>
+                        
+                        <div class="deal-stats">
+                            <div class="deal-stat">
+                                <i class="bi bi-tag"></i>
+                                <span>Discount: 40%</span>
+                            </div>
+                            <div class="deal-stat">
+                                <i class="bi bi-box-seam"></i>
+                                <span>Limited Stock</span>
+                            </div>
+                        </div>
+
+                        <div class="deal-countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="days2">00</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="hours2">00</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="minutes2">00</span>
+                                <span class="countdown-label">Minutes</span>
+                            </div>
+                        </div>
+
+                        <div class="deal-price">
+                            <span class="original-price">₱9,999</span>
+                            <span class="discounted-price">₱5,999</span>
+                        </div>
+
+                        <div class="deal-actions">
+                            <a href="#" class="cta-button deal-button">Shop Now</a>
+                            <a href="#" class="quick-view-deal">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="categories" class="product-categories">
+    <div class="container">
+        <h2 data-aos="fade-down">Shop by <span class="gradient-text-soft">Categories</span></h2>
+        
+        <div class="categories-showcase" data-aos="fade-down">
+            <div class="showcase-wrapper has-scrollbar">
+                <div class="showcase-container">
+                    <div class="showcase category-showcase">
+                        <div class="category-icon-wrapper">
+                            <i class="bi bi-gender-male category-icon"></i>
+                        </div>
+                        <div class="showcase-content category-content">
+                            <a href="#" class="showcase-title">Men's Wear</a>
+                            <div class="category-meta">
+                                <span class="category-badge">120+ Items</span>
+                                <a href="#" class="category-view-all">View All</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase category-showcase">
+                        <div class="category-icon-wrapper">
+                            <i class="bi bi-gender-female category-icon"></i>
+                        </div>
+                        <div class="showcase-content category-content">
+                            <a href="#" class="showcase-title">Women's Wear</a>
+                            <div class="category-meta">
+                                <span class="category-badge">180+ Items</span>
+                                <a href="#" class="category-view-all">View All</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase category-showcase">
+                        <div class="category-icon-wrapper">
+                            <i class="bi bi-watch category-icon"></i>
+                        </div>
+                        <div class="showcase-content category-content">
+                            <a href="#" class="showcase-title">Accessories</a>
+                            <div class="category-meta">
+                                <span class="category-badge">90+ Items</span>
+                                <a href="#" class="category-view-all">View All</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase category-showcase">
+                        <div class="category-icon-wrapper">
+                            <i class="bi bi-sunglasses category-icon"></i>
+                        </div>
+                        <div class="showcase-content category-content">
+                            <a href="#" class="showcase-title">Eyewear</a>
+                            <div class="category-meta">
+                                <span class="category-badge">65+ Items</span>
+                                <a href="#" class="category-view-all">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-container">
+                    <div class="showcase category-showcase">
+                        <div class="category-icon-wrapper">
+                            <i class="bi bi-bag category-icon"></i>
+                        </div>
+                        <div class="showcase-content category-content">
+                            <a href="#" class="showcase-title">Bags & Luggage</a>
+                            <div class="category-meta">
+                                <span class="category-badge">75+ Items</span>
+                                <a href="#" class="category-view-all">View All</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase category-showcase">
+                        <div class="category-icon-wrapper">
+                            <i class="bi bi-star category-icon"></i>
+                        </div>
+                        <div class="showcase-content category-content">
+                            <a href="#" class="showcase-title">Trending</a>
+                            <div class="category-meta">
+                                <span class="category-badge">50+ Items</span>
+                                <a href="#" class="category-view-all">View All</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase category-showcase">
+                        <div class="category-icon-wrapper">
+                            <i class="bi bi-palette category-icon"></i>
+                        </div>
+                        <div class="showcase-content category-content">
+                            <a href="#" class="showcase-title">New Arrivals</a>
+                            <div class="category-meta">
+                                <span class="category-badge">40+ Items</span>
+                                <a href="#" class="category-view-all">View All</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase category-showcase">
+                        <div class="category-icon-wrapper">
+                            <i class="bi bi-flower1 category-icon"></i>
+                        </div>
+                        <div class="showcase-content category-content">
+                            <a href="#" class="showcase-title">Seasonal</a>
+                            <div class="category-meta">
+                                <span class="category-badge">30+ Items</span>
+                                <a href="#" class="category-view-all">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="subscribe" class="zest-subscribe-section">
+    <div class="subscribe-bg-image"></div>
+    <div class="subscribe-overlay"></div>
+    <div class="container">
+        <div class="subscribe-content">
+            <div class="subscribe-text">
+                <h2>Stay Connected with <span class="gradient-text-soft">ZEST</span></h2>
+                <p>Unlock exclusive fashion insights, early collection access, and personalized style recommendations.</p>
+            </div>
+            <div class="subscribe-form-container">
+                <form class="zest-subscribe-form">
+                    <div class="subscribe-input-wrapper">
+                        <div class="input-icon">
+                        </div>
+                        <input 
+                            type="email" 
+                            placeholder="Enter your email address" 
+                            required 
+                            class="subscribe-input"
+                        >
+                        <button type="submit" class="subscribe-button">
+                            <span>Subscribe</span>
+                        </button>
+                    </div>
+                    
+                    <div class="subscribe-extras">
+                        <div class="privacy-guarantee">
+                            <i class="bi bi-shield-lock-fill"></i>
+                            <span>We protect your privacy</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <div class="footer-section" data-aos="fade-up">
+            <h3>ZEST</h3>
+             <p>Contemporary fashion for the modern individual. Elevate your style with ZEST's sophisticated and versatile collections.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                <h3>Customer Service</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                <h3>Subscribe</h3>
+                <p>Stay updated with our latest collections and exclusive offers.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter your email"<input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+           <p>Developed & Designed by JohnDev19</p>
+            <p>&copy; 2024 - All rights reserved.</p>
+        </div>
+    </footer>
+        </main>
+        
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" id="menu-toggle"><i class="bi bi-list"></i><span>Menu</span></a></li>
+        <li>
+            <a href="#">
+                <i class="bi bi-grid"></i>
+                <span>Products</span>
+                <span class="mobile-nav-badge products-badge">3</span>
+            </a>
+        </li>
+            <li><a href="#"><i class="bi bi-shop"></i><span>Shop</span></a></li>
+        <li>
+            <a href="#">
+                <i class="bi bi-heart"></i>
+                <span>Favorites</span>
+                <span class="mobile-nav-badge favorites-badge">5</span>
+            </a>
+        </li>
+            <li><a href="#"><i class="bi bi-cart"></i><span>Cart</span></a></li>
+        </ul>
+    </nav>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
